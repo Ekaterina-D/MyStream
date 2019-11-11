@@ -28,7 +28,7 @@ public class MyStream {
                         ));
         for (Map.Entry<String, Long> stringObjectEntry : collect.entrySet()) {
             double percent = (double) stringObjectEntry.getValue() / amount;
-            System.out.printf("%s=%s%n", stringObjectEntry.getKey(), percent * 100);
+            System.out.printf("%s=%.2f%s%n", stringObjectEntry.getKey(), percent * 100," %");
         }
     }
 
